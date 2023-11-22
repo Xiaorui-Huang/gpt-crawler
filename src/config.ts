@@ -8,11 +8,9 @@ export type Config = {
    */
   url: string;
   /**
-   * Pattern to match against for links on a page to subsequently crawl
-   * @example "https://www.builder.io/c/docs/**"
-   * @default ""
+   * Codes of languages to crawl
    */
-  match: string | string[];
+  languageCodes: string[];
   /**
    * Selector to grab the inner text from
    * @example ".docs-builder-container"
